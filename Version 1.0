@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INTENTO DE CALCULADORA</title>
+  </head>
+  <body>
+    <h1> CALCULADORA </h1>
+    <p> Aqui intentare crear una calculadora web </p>
+    <p> Tu resultado saldra abajo </p>
+    <script>
+var numero_1 = parseInt(prompt("Elije un número"));
+var numero_2 = parseInt(prompt("Elije un segundo número"));
+var operacion = parseInt(prompt("Que quieres hacer con ellos\nElige 1 para sumarlos\nElige 2 para restarlos\nElige 3 para multiplicarlos\nElige 4 para dividirlos"));
+var resultado;
+if(operacion == 1)
+{
+  resultado = numero_1 + numero_2;
+  resultado = parseInt(resultado);
+  }
+else if(operacion == 2)
+{
+  resultado = numero_1 - numero_2;
+  resultado = parseInt(resultado);
+}
+else if (operacion == 3){
+  resultado = numero_1 * numero_2;
+  resultado = parseInt(resultado);
+}
+else if (operacion == 4){
+  resultado = numero_1 / numero_2;
+  resultado = parseInt(resultado);
+}
+else
+{
+  resultado = "que te dejes de pasar de pendejo que no ves que solo te di 4 opciones";
+}
+document.write("El resultado aproximado es "+ resultado);
+
+    </script>
+  </body>
+</html>
